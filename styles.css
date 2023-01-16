@@ -10,7 +10,8 @@ padding: 1rem;
 }
 
 header > img{
-    width: 7rem;
+    width: 10%;
+    margin: 1rem;
 }
 
 nav{
@@ -45,30 +46,48 @@ main{
     position: relative;
     display: grid;
     align-items: center;
+
+}
+
+@media only screen and (max-width: 930px) {
+.featured {
+    width: 100vw;
+    }
 }
 
 .opening{
     position: absolute;
-    width: 50%;
-    padding: 3rem 3rem 3rem 6rem;
+    width: 45%;
+    padding: 3% 3% 3% 6%;
     color: #F2DEBA;
-    font-size:3vw;
+    font-size:2.5vw;
+}
+.opening h1{
+    padding: 10%;
+    backdrop-filter: blur(3px);
 }
 
  .background-img{
     width: 100%;
-     height:100%;
+    height:100%;
     object-fit: cover;
     margin:0%;
     border-radius: 0;
 }
 
 .info{
-    padding: 3rem;
+    padding: 5vw;
     display: grid;
     justify-items: center;
     text-align: justify;
 }
+
+@media only screen and (max-width: 830px) {
+    .info {
+        grid-column: 1/4;
+        margin: auto 3rem;
+        }
+    }
 
 .info > img{
  display: grid;
@@ -98,15 +117,10 @@ footer{
     padding: 1rem;
     display: grid;
     justify-items:center;
-    grid-template-columns: auto auto;
     background-color: teal;
     font-family: 'Roboto Slab', serif;
 }
 
-footer div{
-    display: grid;
-
-}
 
 footer img{
     width: 2rem;
@@ -114,8 +128,6 @@ footer img{
 }
 
 footer p{
-    display: grid;
     color: #F2DEBA;
     margin: 1rem;
-    align-items: center;
 }
